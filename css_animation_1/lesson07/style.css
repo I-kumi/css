@@ -1,0 +1,11 @@
+.btn{
+    text-shadow: 0px 4px black;
+    font-size: 3em;
+    font-weight: bold;
+    color: #cccccc;
+    transition: .5s;
+}
+.btn:active{
+    transform: translateY(4px);
+    text-shadow: 0px 0px black;
+}

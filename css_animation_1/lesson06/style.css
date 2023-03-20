@@ -1,0 +1,31 @@
+.box{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+	transition: 1s;
+}
+.box:hover {
+	transform: rotateX(180deg);
+}
+.box div {
+    backface-visibility: hidden;
+}
+.front,.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: cornflowerblue;
+    line-height: 100px;
+    text-align: center;
+    font-size: 3em;
+}
+.back{
+    background-color: cadetblue;
+    transform: rotateX(180deg);
+}
+.front {
+    z-index: 2;
+}

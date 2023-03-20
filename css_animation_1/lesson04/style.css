@@ -1,0 +1,39 @@
+.btn{
+    position: relative;
+    padding: 10px 0;
+    background-color: #dddddd;
+    text-align: center;
+    color: black;
+    width: 200px;
+    cursor: pointer;
+    box-shadow: 0 5px #bbbbbb;
+    transition: .5s;
+    }
+.btn:active{
+    transform: translateY(5px);
+    box-shadow: 0 0 #bbbbbb;
+}
+.btn::before{
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	transform: skewX(-25deg);
+}
+.btn{
+    overflow:hidden;
+}
+.btn::before{
+    animation: effect 3s infinite;
+}
+@keyframes effect {
+    0% { transform: scale(0) rotate(45deg); opacity: 0; }
+    50% { transform: scale(0) rotate(45deg); opacity: 0.5; }
+    80% { transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { transform: scale(50) rotate(45deg); opacity: 0; }
+}

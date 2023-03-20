@@ -1,0 +1,21 @@
+.icon{
+    width: 100px;
+    height: 100px;
+    display: inline;
+    cursor: pointer;
+}
+.fa-twitter {
+    color: #00ACEE;
+}
+.instagram i{
+    background: linear-gradient(to bottom left,#C51DCD,#FDBA2E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.icon:hover i{
+    transform: scale(1.1);
+}
+.icon i{
+    font-size: 3em;
+    transition-duration: .5s;
+}

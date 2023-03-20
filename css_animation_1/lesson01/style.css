@@ -1,0 +1,14 @@
+.btn {
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+    background-color: #dddddd;
+    box-shadow: 0 5px #b1b1b1;
+    transition: .5s;
+}
+.btn:active{
+    transform: translateY(5px);
+    box-shadow: 0 0 #bbbbbb;
+}
+
