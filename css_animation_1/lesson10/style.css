@@ -1,0 +1,10 @@
+.reverse{
+    transform: rotate(180deg);
+    background-color: #dddddd;
+    font-size: 3em;
+    width: 1em;
+    transition: .5s;
+}
+.box:hover .reverse{
+    transform: translateX(30px)rotate(180deg);
+}

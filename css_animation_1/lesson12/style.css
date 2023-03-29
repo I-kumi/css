@@ -1,0 +1,24 @@
+.box{
+    background-color: #dddddd;
+    width: 400px;
+    padding: 50px;
+}
+.content{
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    float: right;
+}
+.content1{
+    background-color: brown;
+}
+.content2{
+    background-color: cadetblue;
+}
+.content3{
+    background-color: burlywood;
+}
+.box{
+    overflow: auto;
+}
